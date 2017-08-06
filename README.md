@@ -29,7 +29,3 @@ Attributes:
     tool (string): The name of the tool: joomla, yii2-a or yii2-b
     domain (string): Local domain name of your application
     -tn (string, optional): Mandatory for joomla, the name of the template folder that you are building
-
-#### Dev:     Ignacio Salcedo
-#### WebSite: https://isalcedo.com
-#### Email:   ignacio@isalcedo.com
