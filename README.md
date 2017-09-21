@@ -17,13 +17,13 @@ If you are using Yii2:
 
   *yii2-a means Advanced Template.*
 
-BrowserSync will look for any .scss file inside frontend/web/css folder, the same for .js inside frontend/web/js folder and any php file inside of frontend/views/*/*.php, same for backend (backend/web/css, backend/web/js, backend/views/*/*.php)
+BrowserSync will look for any .scss file inside frontend/web/css folder, the same for .js inside frontend/web/js folder and any php file inside of frontend/views/\*/\*.php, same for backend (backend/web/css, backend/web/js, backend/views/\*/\*.php)
 
         $ python startbs.py yii2-b local.example.com
 
   *yii2-b means Basic Template.*
 
-BrowserSync will look for any .scss file inside web/css folder, the same for .js inside web/js folder and any php file inside of views/*/*.php
+BrowserSync will look for any .scss file inside web/css folder, the same for .js inside web/js folder and any php file inside of views/\*/\*.php
 
 Attributes:
     tool (string): The name of the tool: joomla, yii2-a or yii2-b
