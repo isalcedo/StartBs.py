@@ -61,7 +61,7 @@ def start_bs(tool, domain, template_name=False):
     if tool == 'joomla':
         os.system('browser-sync start '
                   '--proxy "' + domain + '" '
-                  '--files "templates/' + template_name + '/scss/*.scss" '
+                  '--files "templates/' + template_name + '/css/*.css" '
                   '"templates/' + template_name + '/js/*.js" '
                   '"templates/' + template_name + '/index.php" '
                   )
@@ -69,19 +69,19 @@ def start_bs(tool, domain, template_name=False):
     if tool == 'yii2-a':
         os.system('browser-sync start '
                   '--proxy "' + domain + '" '
-                  '--files "frontend/web/scss/*.scss" '
-                  '"frontend/web/js/*.js" '
+                  '--files "public_html/css/*.css" '
+                  '"public_html/js/*.js" '
                   '"frontend/views/*/*.php" '
-                  '"backend/web/scss/*.scss" '
-                  '"backend/web/js/*.js" '
+                  '"public_html/admin/css/*.css" '
+                  '"public_html/admin/js/*.js" '
                   '"backend/views/*/*.php" '
                   )
         pass
     if tool == 'yii2-b':
         os.system('browser-sync start '
                   '--proxy "' + domain + '" '
-                  '--files "web/scss/*.scss" '
-                  '"web/js/*.js" '
+                  '--files "public_html/css/*.css" '
+                  '"public_html/js/*.js" '
                   '"views/*/*.php" '
                   )
         pass
