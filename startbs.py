@@ -59,31 +59,31 @@ import argparse
 
 def start_bs(tool, domain, template_name=False):
     if tool == 'joomla':
-        os.system("""browser-sync start
-                     --proxy "'+domain+'"
-                     --files "templates/'+template_name+'/scss/*.scss"
-                             "templates/'+template_name+'/js/*.js"
-                             "templates/'+template_name+'/index.php"
-                """)
+        os.system('browser-sync start '
+                  '--proxy "' + domain + '" '
+                  '--files "templates/' + template_name + '/scss/*.scss" '
+                  '"templates/' + template_name + '/js/*.js" '
+                  '"templates/' + template_name + '/index.php" '
+                  )
         pass
     if tool == 'yii2-a':
-        os.system("""browser-sync start
-                     --proxy "'+domain+'"
-                     --files "frontend/web/scss/*.scss"
-                             "frontend/web/js/*.js"
-                             "frontend/views/*/*.php"
-                             "backend/web/scss/*.scss"
-                             "backend/web/js/*.js"
-                             "backend/views/*/*.php"
-                """)
+        os.system('browser-sync start '
+                  '--proxy "' + domain + '" '
+                  '--files "frontend/web/scss/*.scss" '
+                  '"frontend/web/js/*.js" '
+                  '"frontend/views/*/*.php" '
+                  '"backend/web/scss/*.scss" '
+                  '"backend/web/js/*.js" '
+                  '"backend/views/*/*.php" '
+                  )
         pass
     if tool == 'yii2-b':
-        os.system("""browser-sync start
-                     --proxy "'+domain+'"
-                     --files "web/scss/*.scss"
-                             "web/js/*.js"
-                             "views/*/*.php"
-                """)
+        os.system('browser-sync start '
+                  '--proxy "' + domain + '" '
+                  '--files "web/scss/*.scss" '
+                  '"web/js/*.js" '
+                  '"views/*/*.php" '
+                  )
         pass
 
 
