@@ -64,6 +64,20 @@ def start_bs(tool, domain, template_name=False):
                   '--files "templates/' + template_name + '/css/*.css" '
                   '"templates/' + template_name + '/js/*.js" '
                   '"templates/' + template_name + '/index.php" '
+                  '"components/*/*/*.php" '
+                  '"components/*/*/*/*.php" '
+                  '"components/*/*/*/*/*.php" '
+                  '"modules/*/*.php" '
+                  '"modules/*/*/*.php" '
+                  )
+        pass
+    if tool == 'static':
+        os.system('browser-sync start '
+                  '--proxy "' + domain + '" '
+                  '--files "assets/css/*.css" '
+                  '"assets/js/*.js" '
+                  '"*.php" '
+                  '"*.html" '
                   )
         pass
     if tool == 'yii2-a':
